@@ -1,0 +1,14 @@
+.tilt-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    position: relative;
+    perspective: 500px;
+    width: fit-content;
+}
+
+.tilt-content {
+    transform-origin: center;
+    position: relative;
+    transition: transform 1000ms ease;
+}

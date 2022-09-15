@@ -1,0 +1,10 @@
+<div class="card-container" (click)="clickHandler()">
+    <div class="card-side"
+        [ngStyle]="{ 'transform': (direction === 'horizontal' ? 'rotateY(' + frontRotation + 'deg)' : 'rotateX(' + frontRotation + 'deg)') +  ' translateZ(' + currentTranslationZ + 'px )', 'z-index': frontZindex }">
+        <ng-content select="[card-front]"></ng-content>
+    </div>
+    <div class="card-side" 
+        [ngStyle]="{ 'transform': (direction === 'horizontal' ? 'rotateY(' + backRotation + 'deg)' : 'rotateX(' + backRotation + 'deg)') + ' translateZ(' + currentTranslationZ + 'px )', 'z-index': backZindex }">
+        <ng-content select="[card-back]"></ng-content>
+    </div>
+</div>

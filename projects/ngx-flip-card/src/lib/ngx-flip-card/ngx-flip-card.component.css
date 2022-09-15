@@ -1,0 +1,14 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    position: relative;
+    perspective: 500px;
+    width: fit-content;
+}
+
+.card-side {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    transform-origin: center;
+}
