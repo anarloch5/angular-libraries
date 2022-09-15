@@ -7,5 +7,14 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
+  },
+  "keywords": ["Angular", "Ngx", "Flip", "Card", "Tilt", "Animation", "Rotation"],
+  "author": {
+    "name": "Joao Simao"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "Git",
+    "url": "https://github.com/SpecialOne88/angular-libraries/tree/master/projects/ngx-flip-card"
   }
 }
